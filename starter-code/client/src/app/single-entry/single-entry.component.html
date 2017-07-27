@@ -1,3 +1,15 @@
 <p>
   single-entry works!
 </p>
+
+<h1> Entry details </h1>
+    <a [routerLink]="['']"> Back to list </a>
+
+<div *ngIf="entrie">
+
+  <div class="entrie-info">
+    <h2> {{entrie.title}}</h2>
+    <h3> {{entrie.content}} </h3>
+
+  </div>
+</div>

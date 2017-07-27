@@ -5,5 +5,5 @@ import { SingleEntryComponent } from './single-entry/single-entry.component';
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home',  component: EntryListComponent },
-  { path: 'entries/:id', component: SingleEntryComponent }
+  { path: 'home/entrie/:id', component: SingleEntryComponent }
 ];

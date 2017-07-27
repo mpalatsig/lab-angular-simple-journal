@@ -15,7 +15,7 @@ export class SingleEntryComponent implements OnInit {
   entrie: Object;
   constructor(private route:ActivatedRoute, private jServ: JournalEntries ) {
     route.params
-      .mergeMap( a => jServ.get(a.id) )
+      .mergeMap( (a:any) => jServ.get(a.id) )
       .subscribe( entrie => {
         console.log(entrie);
         this.entrie = entrie;
