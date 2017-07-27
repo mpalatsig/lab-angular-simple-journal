@@ -1,0 +1,8 @@
+<p>
+  entry-list works!
+</p>
+
+<div *ngFor="let entrie of entries | async">
+  <p>{{entrie.tittle}}</p>
+  <p>{{entrie.date}}</p>
+</div>
