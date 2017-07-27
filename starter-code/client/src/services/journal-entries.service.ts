@@ -11,4 +11,9 @@ export class JournalEntries {
     return this.http.get('http://localhost:3000/api/journal-entries')
       .map((res) => res.json());
     }
+
+  get(id){
+    return this.http.get(`http://localhost:3000/api/journal-entries/${id}`)
+      .map((res) => res.json());
+  }
   }
